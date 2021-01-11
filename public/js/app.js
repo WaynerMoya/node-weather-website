@@ -25,10 +25,7 @@ fetch('/weather?address=' +
                 messageOne.textContent  = data.error
             } else {
                 messageOne.textContent  = data.location
-                messageTwo.textContent  = 
-                    "Descriptions : " + data.forecast.weather_descriptions + 
-                    " . Tempeture : " + data.forecast.temperature + 
-                    " . Feelslike : " + data.forecast.feelslike
+                messageTwo.textContent  = data.forecast
                 console.log(data)
             }
         })
